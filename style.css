@@ -5,5 +5,29 @@ body {
     text-align: center;
 }
 .hidden {
-    opacity: 1
+    opacity: 0
+}
+
+canvas {
+    border: 2px solid black;
+}
+
+#start {
+    position: absolute;
+    top: 280px;
+    left: 600px;
+}
+
+#menu {
+    position: absolute;
+    top: 438px;
+    left: 579px;
+}
+
+#random {
+    position: absolute;
+    top: 455px;
+    left: 915px;
+    width: 300px;
+    height: 300px;
 }

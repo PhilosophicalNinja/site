@@ -67,20 +67,4 @@ function gradualTranslate(element, distance, direction, time){
 //opacity is 1 in style.css
 var nodeList = document.querySelectorAll(".hidden");
 
-nodeList.forEach(element => element.addEventListener("click", () => fadeIn(element, 500)));
-
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-let image = new Image();
-image.src = "ITflowchart.png";
-image.onload = () => {
-    ctx.drawImage(image, 0, 0);
-    delayStart();
-};
-
-function delayStart(){
-    ctx.beginPath();
-    ctx.fillStyle = "gray";
-    firstBlock = ctx.fillRect(250, 0, 130, 110);
-    ctx.stroke();
-}
+nodeList.forEach(element => element.addEventListener("mouseover", () => fadeIn(element, 500)));
